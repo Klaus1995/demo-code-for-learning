@@ -18,6 +18,11 @@ class Queue {
     return this[SYMBOL_DATA][0];
   }
 
+  clear() {
+    this[SYMBOL_DATA] = [];
+    return true;
+  }
+
   isEmpty() {
     return this[SYMBOL_DATA].length === 0;
   }

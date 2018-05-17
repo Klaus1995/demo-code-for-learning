@@ -5,15 +5,17 @@ describe('Stack', () => {
   it('#push()', () => {
     const testStack = new Stack();
     testStack.push(0);
+    testStack.push(1);
     const element = testStack.peek();
-    expect(element).to.be.equal(0);
+    expect(element).to.be.equal(1);
   });
 
   it('#pop()', () => {
     const testStack = new Stack();
     testStack.push(0);
+    testStack.push(1);
     const element = testStack.pop();
-    expect(element).to.be.equal(0);
+    expect(element).to.be.equal(1);
   });
 
   it('#peek()', () => {
