@@ -1,9 +1,9 @@
-const Stack = require('./../Queue.js');
+const Queue = require('./../Queue.js');
 const expect = require('chai').expect;
 
 describe('Queue', () => {
   it('#enqueue()', () => {
-    const testQueue = new Stack();
+    const testQueue = new Queue();
     testQueue.enqueue(0);
     testQueue.enqueue(1);
     const element = testQueue.front();
@@ -11,7 +11,7 @@ describe('Queue', () => {
   });
 
   it('#dequeue()', () => {
-    const testQueue = new Stack();
+    const testQueue = new Queue();
     testQueue.enqueue(0);
     testQueue.enqueue(1);
     const element = testQueue.dequeue();
@@ -19,7 +19,7 @@ describe('Queue', () => {
   });
 
   it('#front()', () => {
-    const testQueue = new Stack();
+    const testQueue = new Queue();
     testQueue.enqueue(0);
     testQueue.enqueue(1);
     testQueue.enqueue(2);
@@ -28,13 +28,13 @@ describe('Queue', () => {
   });
 
   it('#isEmpty()', () => {
-    const testQueue = new Stack();
+    const testQueue = new Queue();
     const isEmpty = testQueue.isEmpty();
     expect(isEmpty).to.be.ok;
   });
 
   it('#clear()', () => {
-    const testQueue = new Stack();
+    const testQueue = new Queue();
     testQueue.enqueue(0);
     testQueue.clear();
     const isEmpty = testQueue.isEmpty();
@@ -42,7 +42,7 @@ describe('Queue', () => {
   });
 
   it('#size()', () => {
-    const testQueue = new Stack();
+    const testQueue = new Queue();
     testQueue.enqueue(0);
     let size = testQueue.size();
     expect(size).to.be.equal(1);
@@ -52,7 +52,7 @@ describe('Queue', () => {
   });
 
   it('#toString()', () => {
-    const testQueue = new Stack();
+    const testQueue = new Queue();
     testQueue.enqueue(0);
     testQueue.enqueue(1);
     testQueue.enqueue(2);
