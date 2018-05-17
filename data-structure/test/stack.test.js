@@ -1,7 +1,7 @@
 const Stack = require('./../Stack.js');
 const expect = require('chai').expect;
 
-describe('Stack', function () {
+describe('Stack', () => {
 
   it('#push()', function () {
     const testStack = new Stack();

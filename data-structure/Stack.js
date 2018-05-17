@@ -2,7 +2,7 @@ const SYMBOL_DATA = Symbol('data');
 
 class Stack {
   constructor() {
-    this[SYMBOL_DATA] = new Array();
+    this[SYMBOL_DATA] = [];
   }
 
   push(element) {
@@ -24,7 +24,7 @@ class Stack {
   }
 
   clear() {
-    this[SYMBOL_DATA] = new Array();
+    this[SYMBOL_DATA] = [];
     return true;
   }
 
