@@ -1,3 +1,14 @@
 {
-    "extends": "airbnb-base"
+    "extends": "airbnb-base",
+    "env": {
+        "mocha": true
+    },
+    "rules": {
+        "prefer-destructuring": [
+            0
+        ],
+        "no-unused-expressions": [
+            0
+        ]
+    }
 }

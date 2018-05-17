@@ -2,22 +2,21 @@ const Stack = require('./../Stack.js');
 const expect = require('chai').expect;
 
 describe('Stack', () => {
-
-  it('#push()', function () {
+  it('#push()', () => {
     const testStack = new Stack();
     testStack.push(0);
     const element = testStack.peek();
     expect(element).to.be.equal(0);
   });
 
-  it('#pop()', function () {
+  it('#pop()', () => {
     const testStack = new Stack();
     testStack.push(0);
     const element = testStack.pop();
     expect(element).to.be.equal(0);
   });
 
-  it('#peek()', function () {
+  it('#peek()', () => {
     const testStack = new Stack();
     testStack.push(0);
     testStack.push(1);
@@ -26,13 +25,13 @@ describe('Stack', () => {
     expect(element).to.be.equal(2);
   });
 
-  it('#isEmpty()', function () {
+  it('#isEmpty()', () => {
     const testStack = new Stack();
     const isEmpty = testStack.isEmpty();
     expect(isEmpty).to.be.ok;
   });
 
-  it('#clear()', function () {
+  it('#clear()', () => {
     const testStack = new Stack();
     testStack.push(0);
     testStack.clear();
@@ -40,7 +39,7 @@ describe('Stack', () => {
     expect(isEmpty).to.be.ok;
   });
 
-  it('#size()', function () {
+  it('#size()', () => {
     const testStack = new Stack();
     testStack.push(0);
     let size = testStack.size();
@@ -50,7 +49,7 @@ describe('Stack', () => {
     expect(size).to.be.equal(0);
   });
 
-  it('#toString()', function () {
+  it('#toString()', () => {
     const testStack = new Stack();
     testStack.push(0);
     testStack.push(1);
