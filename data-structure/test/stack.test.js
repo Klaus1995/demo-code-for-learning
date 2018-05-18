@@ -1,4 +1,4 @@
-const Stack = require('./../Stack.js');
+const Stack = require('./../src/Stack.js');
 const expect = require('chai').expect;
 
 describe('Stack', () => {

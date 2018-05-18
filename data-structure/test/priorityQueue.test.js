@@ -1,4 +1,4 @@
-const PriorityQueue = require('./../PriorityQueue.js');
+const PriorityQueue = require('./../src/PriorityQueue.js');
 const expect = require('chai').expect;
 
 describe('PriorityQueue', () => {
